@@ -1,14 +1,11 @@
 package org.irbis.testwork.irbistestwork.controller;
 
-import jakarta.websocket.server.PathParam;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.irbis.testwork.irbistestwork.model.News;
 import org.irbis.testwork.irbistestwork.service.NewsService;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Slf4j
 @RestController

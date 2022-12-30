@@ -12,6 +12,7 @@ import java.util.List;
 public interface NewsRepository extends JpaRepository<News, Long> {
 
     Page<News> findAllByThemes_Name(String themeName, Pageable pageable);
+
     Page<News> findAllNewsBySourceDomain(String sourceDomain, Pageable pageable);
 
     @Query("from Source s join Theme t where s.domain = :sourceDomain")

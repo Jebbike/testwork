@@ -1,8 +1,6 @@
 package org.irbis.testwork.irbistestwork.security;
 
 import lombok.RequiredArgsConstructor;
-import org.irbis.testwork.irbistestwork.security.ApiTokenAuthenticationProvider;
-import org.irbis.testwork.irbistestwork.security.ApiTokenFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
