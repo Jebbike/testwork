@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,7 +17,4 @@ public class Theme {
     @SequenceGenerator(name = "news_id_gen", sequenceName = "news_id_seq", allocationSize = 1)
     private Long id;
     private String name;
-
-    @ManyToMany
-    private List<News> news;
 }
