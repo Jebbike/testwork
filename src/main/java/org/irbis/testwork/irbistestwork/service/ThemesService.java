@@ -2,7 +2,6 @@ package org.irbis.testwork.irbistestwork.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.irbis.testwork.irbistestwork.model.News;
 import org.irbis.testwork.irbistestwork.model.Theme;
 import org.irbis.testwork.irbistestwork.repository.ThemesRepository;
 import org.springframework.data.domain.Page;
@@ -19,4 +18,5 @@ public class ThemesService {
     public Page<Theme> getThemes(int page, int size) {
         return themesRepository.findAll(PageRequest.of(page, size));
     }
+
 }

@@ -8,6 +8,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Slf4j
 @Service
 @RequiredArgsConstructor
@@ -17,6 +19,11 @@ public class SourcesService {
 
     public Page<Source> getSources(int page, int size) {
         return sourcesRepository.findAll(PageRequest.of(page, size));
+    }
+
+
+    public List<String> getSourcesDomains() {
+        return sourcesRepository.getAllSourcesDomains();
     }
 
 }

@@ -1,4 +1,4 @@
-package org.irbis.testwork.irbistestwork.configuration.security;
+package org.irbis.testwork.irbistestwork.security;
 
 import lombok.RequiredArgsConstructor;
 import org.irbis.testwork.irbistestwork.security.ApiTokenAuthenticationProvider;
