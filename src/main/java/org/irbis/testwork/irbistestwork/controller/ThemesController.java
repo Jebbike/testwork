@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
-@RestController("/themes")
+@RestController("/v1/themes")
 @RequiredArgsConstructor
 public class ThemesController {
 

@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
-@RestController("/sources")
+@RestController("/v1/sources")
 @RequiredArgsConstructor
 public class SourcesController {
 
